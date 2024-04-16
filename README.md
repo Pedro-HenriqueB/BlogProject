@@ -4,7 +4,7 @@
 
 # Topics to be focused on this project
 
-- Classes (Includes inheritance, polymorphism, try catch blocks, and extends)
+- Classes
 - Interfaces
 - Abstract Classes
 - Anonymous Classes
