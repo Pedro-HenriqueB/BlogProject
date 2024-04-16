@@ -1,6 +1,6 @@
 # Blog Project
 
-### A simples projeto to practice some of the PHP concepts and best practices
+### A simple project to practice some of the PHP concepts and best practices
 
 # Topics to be focused on this project
 
