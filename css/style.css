@@ -14,12 +14,12 @@
 }
 
 /* Login Form */
-#loginContainer {
+#container {
     display: flex;
     justify-content: center;
 }
 
-#loginForm {
+#formContainer {
     border: 1px solid white;
     border-radius: 10px;
     width: 300px;
@@ -31,10 +31,6 @@
     background-image: url('../img/black-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-#loginInputs {
-    margin: auto;
 }
 
 #loginTitle{

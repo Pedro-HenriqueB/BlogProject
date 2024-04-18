@@ -9,18 +9,20 @@
 <body>
     <div id="background">
 
-        <div id="loginContainer">
-            <div id="loginForm">
-
-                <div id="loginInputs">
+        <div id="container">
+            <div id="formContainer">
+                <form action="" method="">
+                <div id="inputs">
                     <div id="loginTitle">
                         <p id="loginText">Blog Project!</p>
                     </div>
                     <div>
-                        <input type="text" class="loginFields" name="user" id="user">
+                        <input type="text" name="user" id="user">
+                        <input type="email" name="email" id="email">
                     </div>
                     <div>
-                        <input type="password" class="loginFields" name="password" id="password">
+                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password">
                     </div>
                     <div id="btnField">
                         <button class="loginBtn" role="button">Login</button>
@@ -30,6 +32,7 @@
                         <a href="#">Click here to create an account!</a>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
 
