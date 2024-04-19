@@ -14,7 +14,7 @@
                 <form action="" method="">
                 <div id="inputs">
                     <div id="loginTitle">
-                        <p id="loginText">Blog Project!</p>
+                        <p id="loginText">Blog Project te!</p>
                     </div>
                     <div>
                         <input type="text" name="user" id="user">
