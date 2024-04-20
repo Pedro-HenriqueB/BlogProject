@@ -9,7 +9,7 @@
 <body>
     <div id="background">
 
-        <div id="container">
+        <div class="container">
             <div id="formContainer">
                 <form action="" method="">
                 <div id="inputs">
@@ -17,17 +17,17 @@
                         <p id="loginText">Blog Project!</p>
                     </div>
                     <div>
-                        <input type="text" class="loginFields" name="user" id="user">
+                        <input type="text" class="formFields" name="user" id="user" placeholder="USER">
                     </div>
                     <div>
-                        <input type="password" class="loginFields" name="password" id="password">
+                        <input type="password" class="formFields" name="password" id="password" placeholder="PASSWORD">
                     </div>
                     <div id="btnField">
                         <button class="loginBtn" role="button">Login</button>
                     </div>
 
                     <div id="registerLink">
-                        <a href="#">Click here to create an account!</a>
+                        <a href="register.php">Click here to sign up!</a>
                     </div>
                 </div>
                 </form>
