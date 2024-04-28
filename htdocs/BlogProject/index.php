@@ -22,12 +22,14 @@
                     <div>
                         <input type="password" class="formFields" name="password" id="password" placeholder="PASSWORD">
                     </div>
-                    <div id="btnField">
-                        <button class="loginBtn" role="button">Login</button>
-                    </div>
+                    <div>
+                        <div id="btnField">
+                            <button class="loginBtn btnFieldLogin" role="button">Login</button>
+                        </div>
 
-                    <div id="registerLink">
-                        <a href="register.php">Click here to sign up!</a>
+                        <div id="registerLink">
+                            <a href="register.php">Click here to sign up!</a>
+                        </div>
                     </div>
                 </div>
                 </form>
