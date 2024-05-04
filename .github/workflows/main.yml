@@ -1,11 +1,8 @@
 on: 
   push:
     branches:
-<<<<<<< HEAD
      - main
-=======
-      - main
->>>>>>> feature/signup
+     
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
