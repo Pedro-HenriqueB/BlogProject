@@ -9,6 +9,9 @@ if(isset($_POST["submit"]))
     $pwdrepeat = $_POST["confirmPassword"];
 
     // Istantiate SignupContr class
+    include "../classes/signup.classes.php";
+    include "../classes/signup-contr.classes.php";
+    $signup = new SignupContr($uid, $pwd, $pwdRepeat, $email);
 
     // Runing error handlers and user signup
 
