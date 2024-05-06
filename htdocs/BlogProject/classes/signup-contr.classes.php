@@ -1,10 +1,6 @@
 <?php
 
 class SignupContr {
-<<<<<<< HEAD
-
-} 
-=======
     private $uid;
     private $pwd;
     private $pwdRepeat;
@@ -70,4 +66,3 @@ class SignupContr {
         return $result;
     }
 }
->>>>>>> feature/signup
