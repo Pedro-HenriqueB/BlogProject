@@ -11,7 +11,7 @@
 
         <div>
             <div id="registerFormContainer">
-                <form action="" method="">
+                <form action="includes/signup.inc.php" method="post">
                     <div id="loginTitle">
                         <p id="registerText">Sign up to start bloging!</p>
                     </div>
@@ -23,7 +23,7 @@
                         <input type="password" name="confirmPassword" id="confirmPassword" class="formFields" placeholder="CONFIRM PASSWORD">
                     </div>
                     <div id="btnField">
-                        <button class="loginBtn" role="button">Register</button>
+                        <button class="loginBtn" role="button" name="submit">Register</button>
                     </div>
 
                     <div id="registerLink">
