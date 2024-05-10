@@ -11,16 +11,16 @@
 
         <div class="container">
             <div id="formContainer">
-                <form action="" method="">
+                <form action="includes/login.inc.php" method="POST">
                 <div id="inputs">
                     <div id="loginTitle">
                         <p id="loginText">Blog Project!</p>
                     </div>
                     <div>
-                        <input type="text" class="formFields" name="user" id="user" placeholder="USER">
+                        <input type="text" class="formFields" name="uid" id="user" placeholder="USER">
                     </div>
                     <div>
-                        <input type="password" class="formFields" name="password" id="password" placeholder="PASSWORD">
+                        <input type="password" class="formFields" name="pwd" id="password" placeholder="PASSWORD">
                     </div>
                     <div>
                         <div id="btnField">

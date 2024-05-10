@@ -6,13 +6,13 @@ class Login extends Dbh{
 
         if(!$stmt->execute(array($uid, $pwd))) {
             $stmt = null;
-            header("location: ../index.php?error=stmtfailed");
+            header("location: ../login.php?error=stmtfailed");
             exit();
         }
 
         if($stmt->rowCount() == 0) {
             $stmt = null;
-            header("location: ../index.php?error=usernotfound");
+            header("location: ../login.php?error=usernotfound");
             exit();
         }
 
@@ -21,7 +21,7 @@ class Login extends Dbh{
 
         if($checkPwd == false) {
             $stmt = null;
-            header("location: ../php?error=wrongpassword");
+            header("location: ../login.php?error=wrongpassword");
             exit();
 
         } elseif($checkPwd == true) {
@@ -30,20 +30,22 @@ class Login extends Dbh{
 
             if(!$stmt->execute(array($uid, $uid, $pwd))) {
                 $stmt = null;
-                header("location: ../index.php?error=stmtfailed");
+                header("location: ../login.php?error=stmtfailed");
                 exit();
             }
 
             if($stmt->rowCount() == 0) {
                 $stmt = null;
-                header("location: ../index.php?error=usernotfound");
+                header("location: ../login.php?error=usernotfound");
                 exit();
             }
 
             $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            var_dump($user);
             session_start();
             $_SESSION["userid"] = $user[0]["users_id"];
             $_SESSION["useruid"] = $user[0]["users_uid"];
+            unset($stmt);
 
         }
         $stmt = null;
