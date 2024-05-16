@@ -14,7 +14,7 @@
                 <form action="includes/login.inc.php" method="POST">
                 <div id="inputs">
                     <div id="loginTitle">
-                        <p id="loginText">Blog Project!</p>
+                        <p id="loginText">Blog Project</p>
                     </div>
                     <div>
                         <input type="text" class="formFields" name="uid" id="user" placeholder="USER">
