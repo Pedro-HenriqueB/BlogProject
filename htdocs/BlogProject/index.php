@@ -14,9 +14,11 @@
     <title>BlogProject</title>
 </head>
 <body>
-    <div class="" id="header">
-        <h1>BLOG PROJECT</h1>
-        <a href="includes/logout.inc.php">LOGOUT</a>
+    <div id="header">
+        <div id="header-title">
+            <h1>BLOG PROJECT</h1>
+        </div>
+        <a class="btn" id="logout-btn" href="includes/logout.inc.php">LOGOUT</a>
     </div>
     <h3>Welcome back <?= $_SESSION["useruid"] ?></h3>
     

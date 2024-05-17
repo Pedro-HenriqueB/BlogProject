@@ -23,7 +23,7 @@
                         <input type="password" name="confirmPassword" id="confirmPassword" class="formFields" placeholder="CONFIRM PASSWORD">
                     </div>
                     <div id="btnField">
-                        <button class="loginBtn" role="button" name="submit">Register</button>
+                        <button class="btn" role="button" name="submit">Register</button>
                     </div>
 
                     <div id="registerLink">

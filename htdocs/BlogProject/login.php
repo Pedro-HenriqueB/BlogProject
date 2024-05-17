@@ -24,7 +24,7 @@
                     </div>
                     <div>
                         <div id="btnField">
-                            <button class="loginBtn btnFieldLogin" role="button">Login</button>
+                            <button class="btn btnFieldLogin" role="button">Login</button>
                         </div>
 
                         <div id="registerLink">
