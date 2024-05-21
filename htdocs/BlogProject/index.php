@@ -20,7 +20,25 @@
         </div>
         <a class="btn" id="logout-btn" href="includes/logout.inc.php">LOGOUT</a>
     </div>
-    <h3>Welcome back <?= $_SESSION["useruid"] ?></h3>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#0">Home</a>
+            </li>
+            <li>
+                <a href="#0">New Blog</a>
+            </li>
+            <li>
+                <a href="#0">MyBlogs</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div id="posts">
+            <h3>Welcome back <?= $_SESSION["useruid"] ?></h3>
+        </div>
+    </div>
+    
     
 </body>
 </html>
