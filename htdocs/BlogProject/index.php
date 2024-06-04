@@ -5,7 +5,13 @@
     session_start();
     if(!isset($_SESSION["userid"])) {
         header("Location: login.php");
-    } ?>
+    } 
+    
+    include_once('classes/dbh.classes.php');
+    include_once('classes/post.classes.php');
+    include_once('classes/post-contr.classes.php');
+    $PostContr = new PostContr();
+    ?>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,6 +42,9 @@
     <div class="container">
         <div id="posts">
             <h3>Welcome back <?= $_SESSION["useruid"] ?></h3>
+            <?php 
+                print_r($PostContr->AllPosts());
+            ?>
         </div>
     </div>
     
