@@ -32,7 +32,7 @@
                 <a href="#0">Home</a>
             </li>
             <li>
-                <a href="#0">New Blog</a>
+                <a href="post.php">New Blog</a>
             </li>
             <li>
                 <a href="#0">MyBlogs</a>

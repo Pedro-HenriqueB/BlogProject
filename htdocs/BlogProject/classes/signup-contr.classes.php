@@ -14,7 +14,8 @@ class SignupContr extends Signup{
         $this->email = $email;
     }
 
-    public function signupUser() {
+    public function signupUser(): void
+    {
         if($this->emptyInput() == false) {
             header("location: ../index.php?error=emptyiniput");
             exit();
@@ -39,7 +40,7 @@ class SignupContr extends Signup{
         $this->setUser($this->uid, $this->pwd, $this->email);
     }
 
-    private function emptyInput()
+    private function emptyInput(): bool
     {
         $result;
         if(empty($this->uid) || empty($this->pwd) || empty($this->pwdRepeat) || empty($this->email))
@@ -52,7 +53,7 @@ class SignupContr extends Signup{
         return $result;
     }
 
-    private function invalidUid()
+    private function invalidUid(): bool
     {
         $result;
         if(!preg_match("/^[a-zA-Z0-9]*$/", $this->uid))
@@ -65,7 +66,7 @@ class SignupContr extends Signup{
         return $result;
     }
 
-    private function invalidEmail()
+    private function invalidEmail(): bool
     {
         $result;
         if(!filter_var($this->email, FILTER_VALIDATE_EMAIL))
@@ -78,7 +79,7 @@ class SignupContr extends Signup{
         return $result;
     }
 
-    private function pwdMatch()
+    private function pwdMatch(): bool
     {
         $result;
         if($this->pwd !== $this->pwdRepeat)
@@ -91,7 +92,7 @@ class SignupContr extends Signup{
         return $result;
     }
 
-    private function uidTakenCheck()
+    private function uidTakenCheck(): bool
     {
         $result;
         if(!$this->checkUser($this->uid, $this->email))

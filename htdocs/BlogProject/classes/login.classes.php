@@ -1,7 +1,8 @@
 <?php
 
 class Login extends Dbh{
-    protected function getUser($uid, $pwd) {
+    protected function getUser($uid, $pwd): void
+    {
         $stmt = $this->connect()->prepare('SELECT users_pwd FROM users WHERE users_uid = ? or users_email = ?;');
 
         if(!$stmt->execute(array($uid, $pwd))) {

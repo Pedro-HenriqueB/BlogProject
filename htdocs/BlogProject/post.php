@@ -7,7 +7,10 @@
 </head>
 <body>
     <h3>New Post</h3>
-    <input type="text" name="title" id="title">
-    <textarea name="post" id="post"></textarea>
+    <form action="includes/post.inc.php" method="post">
+        <input type="text" name="title" id="title">
+        <textarea name="post" id="post"></textarea>
+        <button name="submit" role="button">POST</button>
+    </form>
 </body>
 </html>
