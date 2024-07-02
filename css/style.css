@@ -150,8 +150,7 @@
     transition: opacity 300ms, transform 300ms;
 }
 
-.menu > a:hover::after,
-a:focus::after {
+.menu > a:hover::after, a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
@@ -165,6 +164,15 @@ a:focus::after {
 li:nth-child(3) a:hover::after,
 li:nth-child(3) a:focus::after{
   transform: scale(1);
+}
+
+#pageTitle {
+    text-align: center;
+}
+
+#posts {
+    width: 80%;
+    min-height: 100vh;
 }
 
 

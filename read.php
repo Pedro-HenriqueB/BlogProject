@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/read-style.css">
     <title>BlogProject</title>
 </head>
 <body>
@@ -42,17 +42,11 @@
 
     <div class="container">
         <div id="posts">
-            <?php 
-            $posts = $PostContr->AllPosts();
-            foreach($posts as $post) { ?>
-                <a id="postLink" href="read.php?post_id=<?=$post['post_id']?>">
+            <?php $post = $PostContr->readPost($_GET['post_id'])?>
                 <div id="postDiv">
-                    <p><?=$post['users_uid']?></p>
                     <p><?=$post['post_title']?></p>
                     <p><?=$post['post']?></p>
                 </div>
-                </a>
-            <?php } ?>
         </div>
     </div>
     

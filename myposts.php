@@ -42,12 +42,11 @@
 
     <div class="container">
         <div id="posts">
-            <?php 
-            $posts = $PostContr->AllPosts();
-            foreach($posts as $post) { ?>
+            <?php
+            $myPosts = $PostContr->MyPosts($_SESSION['userid']);
+            foreach($myPosts as $post) { ?>
                 <a id="postLink" href="read.php?post_id=<?=$post['post_id']?>">
                 <div id="postDiv">
-                    <p><?=$post['users_uid']?></p>
                     <p><?=$post['post_title']?></p>
                     <p><?=$post['post']?></p>
                 </div>

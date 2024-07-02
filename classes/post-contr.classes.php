@@ -11,6 +11,13 @@ class PostContr extends Post {
         return $users;
     }
 
+    public function myPosts($user_id): array
+    {
+        $this->user_id = $user_id;
+        $myPosts = $this->GetMyPosts($this->user_id);
+        return $myPosts;
+    }
+
     public function AddPost($user_id, $title, $post): void
     {
         $this->user_id = $user_id;
@@ -26,6 +33,13 @@ class PostContr extends Post {
         $this->CreatePost($this->user_id, $this->title, $this->post);
     }
 
+    public function readPost($post_id): array
+    {
+        $this->post = $post_id;
+        $post = $this->getPost($this->post);
+        return $post;
+    }
+
     private function emptyInput($user_id, $title, $post): bool
     {
         if(empty($user_id) || empty($title) || empty($post))
@@ -34,5 +48,10 @@ class PostContr extends Post {
         } else {
             return true;
         }
+    }
+
+    private function GetAny(): array
+    {
+        
     }
 }
