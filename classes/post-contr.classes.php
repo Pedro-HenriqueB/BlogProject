@@ -49,9 +49,4 @@ class PostContr extends Post {
             return true;
         }
     }
-
-    private function GetAny(): array
-    {
-        
-    }
 }
